@@ -1,0 +1,53 @@
+/**
+
+@mainpage BotRace - Bored robots fight to reach some flags
+
+@author Jörg Ehrichs <joerg.ehrichs@gmx.de>
+@version 0.4
+@date 2012
+
+@section general General Information
+This game represents a RoboRally clone written in Qt.\n\n
+The Game has a couple of features. Such as:
+@li Network Play
+@li Solo gaming against bots
+@li Interactive game boards
+@li Editor to create new board scenarios
+@li Variable game rules
+
+This doxygen documentation explains some of the basics
+and in case some other developers like to help a starting point
+to find their way through the code and the ideas behind the reasons
+why some things are done in the way they are done.
+
+Furthermore some help to extend the game for your needs.
+
+@section developers Developer information:
+@li Homepage: @verbatim https://sourceforge.net/p/botrace/home/Bot%20Race/ @endverbatim
+@li Git repo: @verbatim git clone git://git.code.sf.net/p/botrace/git botrace-git @endverbatim
+@li Bugtracker: @verbatim https://sourceforge.net/p/botrace/tickets/ @endverbatim
+
+Good starting point to dive into this documentation:
+@li @link BotRace @endlink
+@li @link BotRace::Core @endlink
+@li @link BotRace::Client @endlink
+@li @link BotRace::Renderer @endlink
+@li @link BotRace::Network @endlink
+@li @link BotRace::Editor @endlink
+
+@section howtos How to add new floor / wall types or create a new theme
+To add a new FloorTileType or WallTileType a number of steps have to be done.
+The easiest addition are noninteractive types.\n
+The worst ones are animated types.
+
+Have a look at the following pages for detailed information:
+@li @subpage flooraddition "Add a new floor type"
+@li @subpage walladdition "Add a new wall type"
+
+For themes the best start is the currently available default theme and change them to your needs.
+
+The following page descripes what is necessary and what you should keep in
+mind when adding new themes.
+@li @subpage themecreation "Create a new theme"
+
+*/  

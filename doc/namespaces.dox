@@ -1,0 +1,101 @@
+ 
+/**
+  * @namespace BotRace
+  *
+  * @brief Main namespace for all components of the game
+  * 
+  * Contains all other namespaces and thus the complete game.
+  *
+  * @see Core
+  * @see Client
+  * @see Network
+  * @see Editor
+ */
+ 
+/**
+  * @namespace BotRace::Core
+  *
+  * @brief Core namespace to hold the basics such as the engine and board / card details
+  * 
+  * The core part of the game consits of the GameEngine which connects all parts together.
+  * The game is driven by a QStateMachine that defines all gamerelated actions
+  *
+  * The game itself consists of a Board some Robot 's which can be moved by
+  * a set of Cards that are delivered to the CardDeck. The CardManager holds all
+  * GameCard_T 's and deals them to the Participant.
+  *
+  * The Participant is proxyclass that connects the Robot and CardDeck together for usage
+  * in the AbstractClient and derived clients.
+  *
+  * Ovewview how the core stuff is related to each other
+  * @image html core_overiew_uml.png
+  *
+  * The gameengine statemachine can be seen in the next two images
+  * @image html core_main_statemachine_uml.png
+  * @image html core_phase_statemachine_uml.png
+ */
+ 
+/**
+  * @namespace BotRace::Client
+  *
+  * @brief Namespace for all Client related classes
+  * 
+  * The graphical client is used for all Participant interactions. It displays the BoardScenario_T
+  * with all Robot 's, the CardDeckWidget, ProgrammingWidget, ParticipantList and can interact with the game
+  *
+  * Usual interactions are the programming with different GameCard_T 's and the selection of a new startingpoint
+  *
+  * The client can be used as
+  * @li LocalClient\n
+  *     Which implements a solo game against a SimpleBot\n
+  * @li NetworkClient\n
+  *     Which implements a network game agains others either as host of the game Server or to simple join a different game
+  *
+  * The ServerClient is an important counterpart as it implements the complete AbstracClient interface on the Server side and
+  * sends all the necessary data via TCPSocket to the NetworkClient.
+ */
+
+/**
+  * @namespace BotRace::Renderer
+  *
+  * @brief Namespace for the rendering stuff
+  *
+  * The game graphics are created from a set of SVG files. As rendering SVG files via QSvgRenderer is not the fastest
+  * operation, all graphics are cached as QImage files which are created in a seperate render thread.
+  *
+  * The client uses this to create the Client::GameBoard, Client::CardDeckWidget, Client::ProgrammingWidget and so on and the editor
+  * uses it to draw the single tiles.
+  *
+  * Apart from rendering sololey the svg graphics in the right scale as QImage files, all tiles (Core::FloorTileType and Core::WallTileType)
+  * are rendered in all 4 possible directions
+  *
+  * The BoardRenderer uses them to generate the BoardScenario image in exactly the way it was described as one single file
+  * This largly enhance the rendering of large scenes as only 1 image has to be drawn instead of many small tiles.
+  *
+  * Overview how all is connected together:
+  * @image html renderer_overview_uml.png
+ */
+
+/**
+  * @namespace BotRace::Network
+  *
+  * @brief Namespace for the server side of the game
+  *
+  * The Server creates a basis where all NetworkClients cann connect to. Via the Connection all data is transfered at
+  * TCPSocket interface between the ServerClient and NetworkClient.
+  * 
+  * The Server creates the GameEngine and simply forwards all informations to the clients. 
+  *
+  * Loose ovewview how the whole client / server stuff is related to each other
+  * @image html server_client_structure.png
+ */
+
+/**
+  * @namespace BotRace::Editor
+  *
+  * @brief Namespace for board editor
+  *
+  * The editor is used to create new Boards and BoardScenarios for the game.
+  *
+  * @see BoardParser
+ */

@@ -1,0 +1,53 @@
+[Scenario]
+name=Bloodbath Chess
+description=Take no prisoners!
+author=Wizard of The Coast
+email=Unknown Email
+boards=2
+size=@Size(14 18)
+startorientation=north
+
+[Board1]
+name=/original_start_2
+orientation=north
+position=@Point(1 13)
+
+[Board2]
+name=/original/chess
+orientation=west
+position=@Point(1 1)
+
+[Start-Normal]
+8=@Point(12 15)
+7=@Point(1 15)
+6=@Point(11 15)
+5=@Point(2 15)
+4=@Point(9 15)
+3=@Point(4 15)
+2=@Point(7 15)
+1=@Point(6 15)
+
+[Start-DM]
+8=@Point(10 9)
+7=@Point(6 15)
+6=@Point(5 4)
+5=@Point(7 15)
+4=@Point(10 3)
+3=@Point(2 15)
+2=@Point(1 1)
+1=@Point(12 15)
+
+[Start-Virtual]
+1=@Point(6 15)
+
+[Flag]
+4=@Point(4 5)
+3=@Point(9 8)
+2=@Point(3 10)
+1=@Point(7 6)
+
+[KingOfFlag]
+1=@Point(6 7)
+
+[KingOfHill]
+1=@Point(6 7)

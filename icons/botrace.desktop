@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=BotRace
+Comment=BotRace board game
+Icon=botrace
+Exec=botrace
+Terminal=false
+StartupNotify=false
+Categories=Game;BoardGame;Qt;

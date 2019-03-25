@@ -1,0 +1,12 @@
+Source: botrace
+Section: games
+Priority: optional
+Maintainer: Joerg Ehrichs <joerg.ehrichs@gmx.de>
+Homepage: http://sourceforge.net/p/botrace/home/
+Build-Depends: debhelper (>= 4.1.16), libqt4-dev (>= 4.7), g++
+
+Package: botrace
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Bot Race is a boardgame written in Qt4
+ In this game you program a robot via 5 different cards and try to reach several flags before your opponent can reach them.

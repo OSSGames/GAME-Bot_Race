@@ -1,0 +1,55 @@
+botrace (0.4) unstable; urgency=high
+
+  * Added gamemode King of the Flag
+  * Added gamemode King of the Hill
+  * Added virtual robot gamemode
+  * Bugfixes in the network game
+  * updated gamesettings widget
+  * better looking participant list and game won/los screen
+  * Added game manual
+  * Show board preview in the selection dialog
+  * get robot starting rotation from the scenario file
+
+ -- Jörg Ehrichs <joerg.ehrichs@gmx.de>  Thu, 26 Jul 2012 13:37:00 +0100
+ 
+botrace (0.3) unstable; urgency=high
+
+  * Added Deathmatch mode
+  * Added card simulator to simulate player bot movement
+  * Better Bot KI that can actually win the game
+  * Added counter to show kills/death/suicides
+  * More bug fixing
+
+ -- Jörg Ehrichs <joerg.ehrichs@gmx.de>  Fri, 20 Jul 2012 13:37:00 +0100
+ 
+botrace (0.2) unstable; urgency=high
+
+  * Added more scenarios
+  * Fixed several bugs and crahses
+
+ -- Jörg Ehrichs <joerg.ehrichs@gmx.de>  Fri, 13 Jul 2012 13:37:00 +0100
+ 
+botrace (0.1rev30) unstable; urgency=high
+
+  * Several bugfixes
+  * Several crash fixes
+  * Add support for phase independant elements
+  * Add elements: pusher, edge, ramp, crusher, teleporter, randomizer, water/hazard pit, trapdoor, water drain, flame thrower, water, oil, hazard tile
+  * Enhance editor
+  * Update scenario file scheme, add several new scenarios
+
+ -- Jörg Ehrichs <joerg.ehrichs@gmx.de>  Sat, 07 Jul 2012 13:37:00 +0100
+ 
+botrace (0.1rev12) unstable; urgency=low
+
+  * Several bugfixes
+  * Several crash fixes
+  * Working Network game
+
+ -- Jörg Ehrichs <joerg.ehrichs@gmx.de>  Sun, 01 Jul 2012 13:37:00 +0100
+ 
+botrace (0.1rev1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Jörg Ehrichs <joerg.ehrichs@gmx.de>  Sat, 26 Feb 2011 11:15:00 +0100

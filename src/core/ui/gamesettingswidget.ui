@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameSettingsWidget</class>
+ <widget class="QWidget" name="GameSettingsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>438</width>
+    <height>295</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="documentMode">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="generalTab">
+      <attribute name="title">
+       <string>General</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>10</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelName">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="playerName"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelBot">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Your Bot:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="botSelection"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Number of Players:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="playersSpinBox">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Game Mode:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="modeComboBox">
+         <item>
+          <property name="text">
+           <string>Hunt the Flag</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Death or Alive</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>King of the Flag</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>King of the Hill</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Select Board:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="boardEdit">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="selectBoardButton">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="selectRandomBoard">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Random</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Start position:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="startPosition">
+         <item>
+          <property name="text">
+           <string>Normal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DeathMatch</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Virtual</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ki Opponent:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="botCheckBox">
+           <property name="text">
+            <string>Fill with Bots</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="botDifficulty">
+           <item>
+            <property name="text">
+             <string>Easy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Normal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hard</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="botruleTab">
+      <attribute name="title">
+       <string>Bot Rules</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::ExpandingFieldsGrow</enum>
+       </property>
+       <property name="horizontalSpacing">
+        <number>10</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lifeLabel">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Lifes:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="buddy">
+          <cstring>lifeSpinBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QSpinBox" name="lifeSpinBox"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="infLifeCheckBox">
+           <property name="text">
+            <string>Infinity Lifes</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="damageOnResurrectLabel">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Damage on Resurrect:</string>
+         </property>
+         <property name="buddy">
+          <cstring>damageSpinBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QSpinBox" name="damageSpinBox"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="invRobotCheckBox">
+           <property name="text">
+            <string>Invulnerable Robots</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="allowPushingCheckBox">
+         <property name="text">
+          <string>Pushing Disabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="useVirtualRobot">
+         <property name="text">
+          <string>Use Virtual Bot</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gamerulestab">
+      <attribute name="title">
+       <string>Game Rules</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout_3">
+       <property name="formAlignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="horizontalSpacing">
+        <number>10</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Kills to Win in Death or Alive:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="killsToWin">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="value">
+          <number>5</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Points to Win in King of Flag/Hill:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="pointsToWin">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>infLifeCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>enableDisableLifes(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>212</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>invRobotCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>enableDisableDamage(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>212</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>botCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>boardEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>294</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>modeComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playersSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lifeSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>-8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>infLifeCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>invRobotCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>damageSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>181</x>
+     <y>-12</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>allowPushingCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GameSettingsWidget</receiver>
+   <slot>changeSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>422</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>enableDisableDamage(bool)</slot>
+  <slot>enableDisableLifes(bool)</slot>
+  <slot>changeSettings()</slot>
+ </slots>
+</ui>

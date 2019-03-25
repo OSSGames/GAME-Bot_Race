@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>application-exit.png</file>
+        <file>application-x-smb-server.png</file>
+        <file>arrow-right.png</file>
+        <file>configure.png</file>
+        <file>help-about.png</file>
+        <file>help-contents.png</file>
+        <file>list-add.png</file>
+        <file>list-remove.png</file>
+        <file>network-connect.png</file>
+        <file>network-disconnect.png</file>
+        <file>settings-board-theme.png</file>
+        <file>settings-card-theme.png</file>
+        <file>settings-gui-theme.png</file>
+        <file>settings-robot-theme.png</file>
+        <file>document-close.png</file>
+        <file>document-edit.png</file>
+        <file>document-save-as.png</file>
+        <file>document-save.png</file>
+        <file>edit-select.png</file>
+        <file>zoom-in.png</file>
+        <file>zoom-original.png</file>
+        <file>zoom-out.png</file>
+        <file>botrace-big.png</file>
+    </qresource>
+</RCC>

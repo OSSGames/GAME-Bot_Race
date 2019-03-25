@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Bot Race - Game Manual</title>
+
+
+
+  
+    
+    <meta content="">
+    <style></style></head><body>
+<h1 style="text-decoration: underline;">Game Manual</h1>
+
+
+<ul>
+  <li><a href="#About_Bot_Race">About Bot Race</a></li>
+  <li><a href="#The_Interface">The Interface</a></li>
+  <li><a href="#The_Cards">The Cards</a><br>
+  </li>
+  <li><a href="#The_Game_Phases">The Game Phases</a>
+  </li>
+  <li><a href="#The_Board_Elements">The Board Elements</a></li>
+  <ul>
+    <li><a href="#Floors">Floors</a></li>
+  </ul>
+  <ul>
+    <li><a href="#Walls">Walls</a></li>
+  </ul>
+  <li><a href="#The_Game_Modes">The Game Modes</a></li>
+  <ul>
+    <li><a href="#Hunt_the_Flag">Hunt the Flag</a></li>
+  </ul>
+  <ul>
+    <li><a href="#Death_or_Alive">Death or Alive</a></li>
+    <li><a href="#King_of_The_Flag">King of the Flag</a></li>
+    <li><a href="#King_of_the_Hill">King of the Hill</a><br>
+    </li>
+
+  </ul>
+  <li><a href="#Tips_and_Tricks">Tips and Tricks</a><br>
+  </li>
+</ul>
+
+
+
+
+<h1><a name="About_Bot_Race"></a>About Bot Race</h1>
+In this game you control a tiny robot through a big factory maze. You
+can program the robots movement with 5 cards and help him to reach its
+next goal.<br>
+Be careful though the factory is full of dangerous traps.<br>
+<h1><a name="The_Interface"></a>The Interface</h1>The game interface concists of 4 parts:<br>
+<h3>Gameboard:</h3>
+This is the board where the robots will be shown and moved on. You can
+zoom in and out via a menu entry or by using the mouse wheel.<br>
+<h3>Carddeck:</h3>
+The carddeck shows all available cards for the current round you can
+use to program the robot. The player receives 9 Cards, minus 1 card for
+each damage token it receives.<br>
+Cards can be placed in the program slots bei either double-click or drag and drop.<br>
+<h3>Statuswindow:</h3>
+In this window additional information about the game are shown.<br>
+<h3>Robot Control Panel:</h3>
+
+<img style="width: 681px; height: 160px;" alt="" src="images/program.jpg"><br>
+The control panel is the main element in the game.<br>
+It allows the player to program the the robots via 5 Cards which can be
+taken from the robots card deck (by double-click or drag and drop).<br>
+In addition the next flag goal is shown in the upper left and the remaining lifes in the bottom left.<br>
+<br>
+The current damage token are shown on the right side. If the player
+receives more than 4 damage tokens for each new token one of the cards
+will be locked (shown in grey).<br>
+These locked cards can't be changed and won't be returned to teh deck after the phase is over.<br>
+<br>
+The button in the upper right are used to tell the game that you have
+finished programing your robot. The button on the bottom right announce
+the power down.<br>
+The power down can only be used before the programming is finished and
+will power down the robot after the current round is played completely.<br>
+<h1><a name="The_Cards"></a>The Cards</h1>
+There exist 6 different cards that can be used to program the robot. Each card has in addition a priority printend on it. <br>
+In the case that 2 or more robots whould push each other the card with the highest priority will be executed first.<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td width="1%"><img src="images/Card_Left.png" height="70" width="50"><br>
+      </td>
+      <td style="width: 99%;">Rotates the robot 90° to the left<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Card_Right.png" height="70" width="50"><br>
+      </td>
+      <td width="99%">Rotates the robot 90° to the right
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Card_Turn.png" height="70" width="50"><br>
+      </td>
+      <td width="99%">Rotates the robot 180°<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Card_Forward_1.png" height="70" width="50"><br>
+      </td>
+      <td width="99%">Moves the robot 1 tile<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Card_Forward_2.png" height="70" width="50"><br>
+      </td>
+      <td width="99%">Moves the robot 2 tiles
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Card_Forward_3.png" height="70" width="50"><br>
+      </td>
+      <td width="99%">Moves the robot 3 tiles
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h1><a name="The_Game_Phases"></a>The Game Phases</h1>
+Each round is played in several phases one after each other.<br>
+<ul>
+  <li>Programming phase</li>
+  <li>Execute card [1-5] <span style="font-style: italic;">(only one at a time)</span><br>
+  </li>
+  <ul>
+    <li>Move Robot according to the current card</li>
+    <li>Move Conveyor belts Express/Normal/Water drain</li>
+    <li>Move Express Belts only</li>
+    <li>Move Pusher</li>
+    <li>Move Crusher</li>
+    <li>Shoot Lasers</li>
+  </ul>
+  <li>Check if some robots won</li>
+  <li>Resurrect dead robots</li>
+</ul>
+
+<h1><a name="The_Board_Elements"></a>The Board Elements</h1>Each board is created from a set of board elements. Each element has a different function.<br>
+Sometimes the elements are not active in each phase, small red numbers
+indicate the phase in which the elements will be executed.<br>
+
+<h3><a name="Floors"></a>Floors</h3>
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td width="1%"><img src="images/Floor_Normal.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Normal Floor</span>. Nothing happens on this tile.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_AutoPit_Off.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Automatic Pit</span>. Activated on certain phases. The robot falls down whenever the pit is activated and thus open.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Conv_1_Straight.png" height="50" width="50"><img src="images/Floor_Conv_2_Straight.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Conveyor Belt</span> Left. Transports the robot. The green one only 1 Tile per phase the Blue Express Belts 2 Tiles per phase.<br>
+The curved Belts also rotate the robot when he gets moved onto it by another belt.<br>
+
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Edge.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Edge</span> of the Board. The robot falls down and is dead.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Hazard.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Radioactive hazard</span>. Every time the robot moves over it. It receives 1 damage token.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_HazardPit.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Hazard Pit</span>. The robot falls down and will be killed.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Oil.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Oil</span>.
+Whene the robot moves on it, it slides until the next tile without oil
+is reached or another robot/ a wall blocks it. If the Robot starts its
+move in this tile the wheels will spin. Thus A move 2 or higher is
+necessary to get out.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Pit.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Normal Pit</span>. The robot falls down and will be killed.
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Randomizer.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Randomizer</span>. When the robots moves onto this tile the next register card will be replaced with a random one.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Repair.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Repair Tile</span>.
+When the robot ends its last move (Phase 5) on this tile it will repair
+1 damage token. Also whenever it moves onto this tile the archive
+marker is placed here.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Repair_Options.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Repair and Options Tile</span>. When the robot ends its last move (Phase 5) on this tile
+it will repair 2 damage token or receive an option card. Also whenever it moves onto this tile
+the archive marker is placed here.
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Teleporter.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Teleporter</span>. Whenever the robot moves onto this tiles, it will be teleported 2 tiles further away.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_Water.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Water</span>.
+Hinders the robot movement.&nbsp; If the Robot starts its move in this
+tile the wheels will spin. Thus A move 2 or higher is necessary to get
+out. </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_WaterDrain_Straight.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Water drain</span>.
+Transports the robot 1 Tile into the direction of the arrow in the
+conveyor belts phase. Also all rules of the normal water tiles apply
+here.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Floor_WaterPit.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Water pit</span>. The robot falls down and will be killed.
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img style="width: 50px; height: 50px;" alt="" src="images/Gear_Left.png"></td>
+      <td width="99%"><span style="font-weight: bold;">Gears left</span>. The robot will be rotated counterclockwise at the end of the register phase.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Gear_Right.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Gears right</span>. The robot will be rotated clockwise at the end of the register phase.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3><a name="Walls"></a>Walls</h3>
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td width="1%"><img src="images/Wall_Normal.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Normal wall.</span> Hinders the robot to move through.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Wall_Laser_1.png" height="50" width="50"><img src="images/Wall_Laser_2.png" height="50" width="50"><img src="images/Wall_Laser_3.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Laser wall</span>. Shoots 1,2 or 3 lasers. Whenever a robot ends its turn in a laser it receives 1,2 or 3 damage tokens.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Wall_Pusher.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Pusher</span>
+. At the end of each turn the pusher (if activated in this phase) will
+push the robot 1 tile away. If the robot can't be pushed, it receives 1
+damage token.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Wall_Crusher.png" height="50" width="50"><img src="images/Wall_Crusher2.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Crusher</span>. At the end of each turn the crusher (if activated in this phase) kills the robot. 
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Wall_Edge.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Edge</span>.
+The robot falls down if it moves in the direction of the arrow and
+receives 2 damage tokens. The Edge acts as a wall in the opposite
+direction.<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Wall_Ramp.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Ramp</span>. The ramp is used to climb up an endge again. A move 2 or higher card is necessary to get up the ramp<br>
+      </td>
+    </tr>
+    <tr>
+      <td width="1%"><img src="images/Wall_Fire.png" height="50" width="50"></td>
+      <td width="99%"><span style="font-weight: bold;">Fire wall</span>. If the robot moves through the fire (if activated) it receives 1 additional damage token.<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2><a name="The_Game_Modes"></a>The Game Modes</h2>Different game modes are available for this game. Each mode has different goals.<br>
+<h3><a name="Hunt_the_Flag"></a>Hunt the Flag</h3>
+In this mode each robot has to get to the next flag on the board. As soon as one robot reached the last flag the game is over.<br>
+<h3><a name="Death_or_Alive"></a>Death or Alive</h3>
+In this mode no flags are available. Instead each robot must try to
+kill as many other robots as possible the first Robot that reached 10
+kills wins the game.<br>
+<h3><a name="King_of_The_Flag"></a>King of The Flag</h3>
+The goal is to catch the flag and hold it as long as possible. Once you
+have the flag you can move around with it. If you die the flag will be
+dropped your robot died or placed back to the starting point if you
+jumped into a pit. Each Card phase you gain 0.2 points, once you have
+reached to points to win <span style="font-style: italic;">(default is 10)</span> you have won the game.<br>
+<h3><a name="King_of_the_Hill"></a>King of the Hill</h3>
+Simmilar to King of the Flag, but instead of running around with a flag
+you need to stay as long as possible at the flag point. Each Card phase
+you gain 0.2 points, once you have reached to points to win <span style="font-style: italic;">(default is 10)</span> you have won the game.<br>
+
+<h1><a name="Tips_and_Tricks"></a>Tips and Tricks</h1>
+When you prohram your robot think about what other robots might do.
+Robots can push each other and you might not end up where you wanted to
+be.<br>
+Remember higher priority cards are always executed first.<br>
+<br>
+If you are unsure where you end up after all factory elements are executed you can enable a card simulator <span style="font-style: italic;">(Help-&gt;Show Simulator)</span> this will calculate your robots movement if no other robot interferes.<br>
+<br>
+
+</body></html>

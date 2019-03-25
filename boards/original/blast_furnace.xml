@@ -1,0 +1,732 @@
+<!DOCTYPE BotRaceBoard>
+<botrace version="1.1">
+  <info>
+    <name>Blast Furnace</name>
+    <author>Wizard of The Coast</author>
+    <email>Unknown Email</email>
+    <description>source: official - crash and burn</description>
+    <size width="12" height="12"/>
+  </info>
+  <layout>
+    <X0Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y0>
+    <X1Y0>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y0>
+    <X2Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y0>
+    <X3Y0>
+      <floor alignment="north" type="Floor_Repair_Options"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y0>
+    <X4Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y0>
+    <X5Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_Fire" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,0,1" north="1,1,1,1,1"/>
+    </X5Y0>
+    <X6Y0>
+      <floor alignment="north" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y0>
+    <X7Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y0>
+    <X8Y0>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y0>
+    <X9Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y0>
+    <X10Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y0>
+    <X11Y0>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y0>
+    <X0Y1>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y1>
+    <X1Y1>
+      <floor alignment="south" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y1>
+    <X2Y1>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y1>
+    <X3Y1>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Pusher"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="0,1,0,1,0"/>
+    </X3Y1>
+    <X4Y1>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y1>
+    <X5Y1>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y1>
+    <X6Y1>
+      <floor alignment="east" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y1>
+    <X7Y1>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y1>
+    <X8Y1>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y1>
+    <X9Y1>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y1>
+    <X10Y1>
+      <floor alignment="west" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y1>
+    <X11Y1>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y1>
+    <X0Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y2>
+    <X1Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Pusher"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y2>
+    <X2Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y2>
+    <X3Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_Fire" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="0,1,1,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y2>
+    <X4Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Fire"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="0,1,1,0,1"/>
+    </X4Y2>
+    <X5Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y2>
+    <X6Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Pusher"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="0,1,0,0,1"/>
+    </X6Y2>
+    <X7Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y2>
+    <X8Y2>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y2>
+    <X9Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y2>
+    <X10Y2>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y2>
+    <X11Y2>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y2>
+    <X0Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y3>
+    <X1Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y3>
+    <X2Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y3>
+    <X3Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y3>
+    <X4Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y3>
+    <X5Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y3>
+    <X6Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y3>
+    <X7Y3>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Pusher"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,0,1,0,1"/>
+    </X7Y3>
+    <X8Y3>
+      <floor alignment="south" type="Floor_Conv_1_TRight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y3>
+    <X9Y3>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_Fire" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,0,1,0" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y3>
+    <X10Y3>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_Pusher" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="0,1,1,0,1" north="1,1,1,1,1"/>
+    </X10Y3>
+    <X11Y3>
+      <floor alignment="north" type="Floor_Repair_Options"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y3>
+    <X0Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y4>
+    <X1Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y4>
+    <X2Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y4>
+    <X3Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y4>
+    <X4Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y4>
+    <X5Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y4>
+    <X6Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y4>
+    <X7Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_Fire" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="0,1,0,1,0" north="1,1,1,1,1"/>
+    </X7Y4>
+    <X8Y4>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_Pusher" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="0,1,1,0,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y4>
+    <X9Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_Fire" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,0,1,0" north="1,1,1,1,1"/>
+    </X9Y4>
+    <X10Y4>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y4>
+    <X11Y4>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y4>
+    <X0Y5>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_Fire" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="0,1,0,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y5>
+    <X1Y5>
+      <floor alignment="north" type="Floor_Conv_1_Curved_Right"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y5>
+    <X2Y5>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y5>
+    <X3Y5>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y5>
+    <X4Y5>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y5>
+    <X5Y5>
+      <floor alignment="east" type="Floor_Conv_1_Curved_Right"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y5>
+    <X6Y5>
+      <floor alignment="north" type="Floor_Repair"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y5>
+    <X7Y5>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y5>
+    <X8Y5>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y5>
+    <X9Y5>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y5>
+    <X10Y5>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y5>
+    <X11Y5>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_Fire" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="0,1,0,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y5>
+    <X0Y6>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y6>
+    <X1Y6>
+      <floor alignment="east" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y6>
+    <X2Y6>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y6>
+    <X3Y6>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y6>
+    <X4Y6>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y6>
+    <X5Y6>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y6>
+    <X6Y6>
+      <floor alignment="north" type="Floor_Pit"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y6>
+    <X7Y6>
+      <floor alignment="north" type="Floor_Pit"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y6>
+    <X8Y6>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y6>
+    <X9Y6>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y6>
+    <X10Y6>
+      <floor alignment="south" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y6>
+    <X11Y6>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y6>
+    <X0Y7>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y7>
+    <X1Y7>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y7>
+    <X2Y7>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Fire"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="0,1,0,1,0"/>
+    </X2Y7>
+    <X3Y7>
+      <floor alignment="north" type="Floor_Repair_Options"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y7>
+    <X4Y7>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y7>
+    <X5Y7>
+      <floor alignment="south" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y7>
+    <X6Y7>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y7>
+    <X7Y7>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_Pusher" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,0,1,0" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y7>
+    <X8Y7>
+      <floor alignment="south" type="Floor_Conv_1_TRight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y7>
+    <X9Y7>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_Fire" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="0,1,0,1,0" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y7>
+    <X10Y7>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y7>
+    <X11Y7>
+      <floor alignment="north" type="Floor_Pit"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y7>
+    <X0Y8>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y8>
+    <X1Y8>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y8>
+    <X2Y8>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_Pusher" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,0,1,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y8>
+    <X3Y8>
+      <floor alignment="north" type="Floor_Conv_1_Curved_Left"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y8>
+    <X4Y8>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y8>
+    <X5Y8>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y8>
+    <X6Y8>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y8>
+    <X7Y8>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Fire"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="0,1,1,1,0"/>
+    </X7Y8>
+    <X8Y8>
+      <floor alignment="south" type="Floor_Conv_1_TLeft"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y8>
+    <X9Y8>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_Pusher" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="0,1,0,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y8>
+    <X10Y8>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y8>
+    <X11Y8>
+      <floor alignment="west" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y8>
+    <X0Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y9>
+    <X1Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y9>
+    <X2Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_Fire"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,0,0,0,1"/>
+    </X2Y9>
+    <X3Y9>
+      <floor alignment="north" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y9>
+    <X4Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_Fire" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,0,0,0,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y9>
+    <X5Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y9>
+    <X6Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y9>
+    <X7Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y9>
+    <X8Y9>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y9>
+    <X9Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y9>
+    <X10Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y9>
+    <X11Y9>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y9>
+    <X0Y10>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y10>
+    <X1Y10>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y10>
+    <X2Y10>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y10>
+    <X3Y10>
+      <floor alignment="north" type="Floor_Conv_1_TLeft"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y10>
+    <X4Y10>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_Fire" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="0,1,0,1,0" north="1,1,1,1,1"/>
+    </X4Y10>
+    <X5Y10>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y10>
+    <X6Y10>
+      <floor alignment="north" type="Floor_Pit"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y10>
+    <X7Y10>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y10>
+    <X8Y10>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y10>
+    <X9Y10>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y10>
+    <X10Y10>
+      <floor alignment="north" type="Floor_Repair"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y10>
+    <X11Y10>
+      <floor alignment="east" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y10>
+    <X0Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_Fire" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="0,1,0,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X0Y11>
+    <X1Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X1Y11>
+    <X2Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X2Y11>
+    <X3Y11>
+      <floor alignment="north" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X3Y11>
+    <X4Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_Pusher" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,0,1,0,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X4Y11>
+    <X5Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X5Y11>
+    <X6Y11>
+      <floor alignment="north" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X6Y11>
+    <X7Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X7Y11>
+    <X8Y11>
+      <floor alignment="south" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X8Y11>
+    <X9Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X9Y11>
+    <X10Y11>
+      <floor alignment="north" type="Floor_Conv_1_Straight"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X10Y11>
+    <X11Y11>
+      <floor alignment="north" type="Floor_Normal"/>
+      <wall west="Wall_None" south="Wall_None" east="Wall_None" north="Wall_None"/>
+      <activephases west="1,1,1,1,1" floor="1,1,1,1,1" south="1,1,1,1,1" east="1,1,1,1,1" north="1,1,1,1,1"/>
+    </X11Y11>
+  </layout>
+</botrace>

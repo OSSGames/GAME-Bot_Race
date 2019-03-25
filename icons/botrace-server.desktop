@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=BotRace Server
+Comment=BotRace dedicated server
+Icon=botrace-server
+Exec=botrace-server
+Terminal=false
+StartupNotify=false
+Categories=Game;BoardGame;Qt;

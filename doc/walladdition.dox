@@ -1,0 +1,53 @@
+ 
+/**
+  * @page walladdition Add a new wall type
+
+Add the svg to the svg theme file (all of them ;)
+and add the sprite name into the file gametheme.h:
+@li GameTheme::createRenderer
+
+In the file board.h
+@li Expand the enum BotRace::Core::WallTileType
+@li add wall to BotRace::Core::tileToSvg( Core::WallTileType wall )
+@li add wall to BotRace::Core::svgToWall( const QString &name );
+@li add wall to BotRace::Core::tileToInfo( Core::WallTileType wall );
+
+
+
+For Walls with animation:
+in file boardrenderer.h:
+@li BotRace::Renderer::AnimationType
+@li BoardRenderer::drawAnimatedWallBoard( BotRace::Renderer::AnimationType type, int phase )
+In file gameengine.h:
+@li BotRace::Core::AnimateElements
+in file gamescene.h:
+@li add new GameBoardAnimation to GameScene::SetUpNewGame
+@li GameScene::animateGraphicElements()
+@li GameScene::finishMoveAnimation()
+
+Walls that switch on/off depending of their phase active status
+Extend file @c tiletheme.cpp
+@li getTile( Core::WallTileType tile, Core::Orientation rotation, int frame = 0, bool activeInPhase = true );
+
+
+
+If necessary for special items that need some more processing (implemented as own QGraphicsItem )
+@li expand BoardManager @see Laser_T
+@li expand GameScene to create these items
+@see GameScene::SetUpNewGame
+@see GameScene::changeBoardScene()
+
+For the functionality:
+@li add a new state if something shout happen in its own state
+@see setUpStateMachine()
+@see StateRotateGears
+@li emit the startAnimation(..) signal in a state where you want the animation to start
+@li if necessary add functionaly wherever you need (Robot or other states)
+
+
+
+
+
+
+
+*/ 

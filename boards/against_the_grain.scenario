@@ -1,0 +1,57 @@
+[Scenario]
+name=Against the Grain
+description=Are you with the conveyor belts or against them?
+author=Wizard of The Coast
+email=Unknown Email
+boards=3
+size=@Size(14 30)
+startorientation=north
+
+[Board1]
+name=/original_start_2
+orientation=north
+position=@Point(1 25)
+
+[Board2]
+name=/original/chess
+orientation=north
+position=@Point(1 13)
+
+[Board3]
+name=/original/chop_shop
+orientation=west
+position=@Point(1 1)
+
+[Start-Normal]
+8=@Point(12 27)
+7=@Point(1 27)
+6=@Point(11 27)
+5=@Point(2 27)
+4=@Point(9 27)
+3=@Point(4 27)
+2=@Point(7 27)
+1=@Point(6 27)
+
+[Start-DM]
+8=@Point(7 1)
+7=@Point(6 27)
+6=@Point(5 2)
+5=@Point(7 27)
+4=@Point(11 2)
+3=@Point(2 27)
+2=@Point(1 3)
+1=@Point(12 27)
+
+[Start-Virtual]
+1=@Point(6 27)
+
+[Flag]
+3=@Point(6 18)
+2=@Point(4 4)
+1=@Point(11 10)
+
+[KingOfFlag]
+1=@Point(7 4)
+
+[KingOfHill]
+1=@Point(5 8)

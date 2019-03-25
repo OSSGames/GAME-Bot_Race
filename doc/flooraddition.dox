@@ -1,0 +1,40 @@
+ 
+/**
+  * @page flooraddition Add a new floor type
+
+Add the svg to the svg theme file (all of them ;)
+and add the sprite name into the file gametheme.h:
+@li GameTheme::createRenderer
+
+In the file board.h
+@li Expand the enum BotRace::Core::FloorTileType
+@li add wall to BotRace::Core::tileToSvg( Core::FloorTileType wall )
+@li add wall to BotRace::Core::svgToFloor( const QString &name );
+@li add wall to BotRace::Core::tileToInfo( Core::FloorTileType wall );
+
+
+
+For floors with animation expand the renderer with:
+in file boardrenderer.h:
+@li BotRace::Renderer::AnimationType
+@li BoardRenderer::drawAnimatedFloorBoard( BotRace::Renderer::AnimationType type, int phase )
+In file gameengine.h:
+@li BotRace::Core::AnimateElements
+in file gamescene.h:
+@li add new GameBoardAnimation to GameScene::SetUpNewGame
+@li GameScene::animateGraphicElements()
+@li GameScene::finishMoveAnimation()
+
+Floors that switch on/off depending of their phase active status
+Extend file @c tiletheme.cpp
+@li getTile( Core::FloorTileType tile, Core::Orientation rotation, int frame = 0, bool activeInPhase = true );
+
+
+If necessary for special items that need some more processing (implemented as own QGraphicsItem )
+@li expand BoardManager @see Laser_T
+@li expand GameScene to create these items
+@see GameScene::SetUpNewGame
+@see GameScene::changeBoardScene()
+
+
+*/

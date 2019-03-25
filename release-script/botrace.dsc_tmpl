@@ -1,0 +1,13 @@
+Format: 1.0
+Source: botrace-##RELESEVERSION##
+Binary: botrace
+Architecture: any
+Version: ##RELESEVERSION##
+Maintainer: Jörg Ehrichs <joerg.ehrichs@gmx.de>
+Homepage: http://sourceforge.net/p/botrace/home/
+Standards-Version: 3.8.4
+Vcs-Browser: http://sourceforge.net/p/botrace/git/?branch=ref%2Fmaster
+Vcs-Git: git://git.code.sf.net/p/botrace/git
+Build-Depends: debhelper (>= 4.1.16), libqt4-dev (>= 4.7), g++
+Files: 
+ ##SH1## ##FILESIZE## botrace-##RELESEVERSION##.tar.gz

@@ -1,0 +1,3 @@
+release-script export-ignore
+.gitattributes export-ignore
+config.pri export-subst

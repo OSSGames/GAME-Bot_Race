@@ -1,0 +1,9 @@
+
+
+# code format according to astyle
+
+astyle  --indent=spaces=4 --brackets=stroustrup --indent-preprocessor \
+        --indent-col1-comments --max-instatement-indent=40 --min-conditional-indent=4 \
+        --unpad-paren --pad-oper --pad-paren-in \
+        --break-closing-brackets --add-brackets --convert-tabs --align-pointer=name \
+        --recursive --suffix=none src/*.cpp src/*.h

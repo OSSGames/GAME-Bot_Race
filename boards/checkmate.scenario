@@ -1,0 +1,51 @@
+[Scenario]
+name=Checkmate
+description=Another easy course - just push the other robots into pits. Checkmate!
+author=Wizard of The Coast
+email=Unknown Email
+boards=2
+size=@Size(14 18)
+startorientation=north
+
+[Board1]
+name=/original/chess
+orientation=east
+position=@Point(1 1)
+
+[Board2]
+name=/original_start_2
+orientation=north
+position=@Point(1 13)
+
+[Start-Normal]
+8=@Point(12 15)
+7=@Point(1 15)
+6=@Point(11 15)
+5=@Point(2 15)
+4=@Point(9 15)
+3=@Point(4 15)
+2=@Point(7 15)
+1=@Point(6 15)
+
+[Start-DM]
+8=@Point(10 9)
+7=@Point(6 15)
+6=@Point(3 6)
+5=@Point(7 15)
+4=@Point(10 3)
+3=@Point(2 15)
+2=@Point(1 1)
+1=@Point(12 15)
+
+[Start-Virtual]
+1=@Point(6 15)
+
+[Flag]
+2=@Point(4 9)
+1=@Point(8 3)
+
+[KingOfFlag]
+1=@Point(6 12)
+
+[KingOfHill]
+1=@Point(7 12)

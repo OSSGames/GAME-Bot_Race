@@ -1,0 +1,77 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# This file is public domain software, originally written by Joey Hess. 
+#
+# This version is for packages that are architecture dependent.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+
+	# Add here commands to compile the package.
+	qmake-qt4 -r -spec linux-g++
+	make
+
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+
+	# Add here commands to clean up after the build process.
+	#$(MAKE) clean
+	#$(MAKE) distclean
+
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	# Add here commands to install the package into debian/<packagename>
+	#make INSTALL_ROOT=`pwd`/debian/package_name install
+	dh_install src/client/botrace usr/bin/
+	dh_install src/editor/botrace-editor usr/bin/
+	dh_install src/server/botrace-server usr/bin/
+	dh_install icons/botrace.desktop usr/share/applications/
+	dh_install icons/botrace-editor.desktop usr/share/applications/
+	dh_install icons/botrace-server.desktop usr/share/applications/
+	dh_install icons/botrace-big.png usr/share/pixmaps
+	dh_install icons/botrace.png usr/share/pixmaps
+	dh_install icons/botrace-editor.png usr/share/pixmaps
+	dh_install icons/botrace-server.png usr/share/pixmaps
+	dh_install themes/* usr/share/botrace/themes
+	dh_install boards/* usr/share/botrace/boards
+	dh_install doc/*.html usr/share/botrace/doc
+	dh_install doc/images/* usr/share/botrace/doc/images
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_installexamples
+	dh_installman
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

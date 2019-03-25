@@ -1,0 +1,14 @@
+
+
+# Network play
++ bot only works
++ player joinging works
+- board creation and the complete info from server stuff does not
+
+Next Step:
++ disable client serverlobby options
++ send options to clients after server clicked apply
+
+# solo play
+- better indication of the own robot
+
